@@ -1,20 +1,16 @@
 Example Voting App
 =========
 
-Originally forked from [here](dockersamples/example-voting-app).
+Fork directo de [here](dockersamples/example-voting-app).
 
-Updated cosmetically for Pluralsight courses.
-
-Relates to two Docker images (v1 and v2) [here](https://hub.docker.com/repository/docker/nigelpoulton/tu-demo)
-
-Architecture
+Arquitectura
 -----
 
 ![Architecture diagram](architecture.png)
 
-* A Python webapp which lets you vote between two options
-* A Redis queue which collects new votes
-* A .NET worker which consumes votes and stores them in…
-* A Postgres database backed by a Docker volume
-* A Node.js webapp which shows the results of the voting in real time
+* App en phython que permite votar entre 2 opciones
+* Una cola en Redis que recolecta los votos
+* Un worker en .NET que toma los votos de la cola y los almacena en...
+* Una BDD Postgres que almacena los votos en un volumen Docker
+* Una app web en node que muestra los resultados de los votos en tiempo real
 
